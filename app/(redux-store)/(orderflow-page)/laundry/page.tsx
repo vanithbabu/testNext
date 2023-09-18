@@ -32,10 +32,9 @@ export default function Laundry() {
             <Image
               src={SchedulePickup}
               alt="See Our Pricing"
-              // width={630}
-              // height={50}
+              width={630}
+              height={50}
               priority
-              placeholder="blur"
               className="lg:absolute right-0 top-28 pt-2 "
             />
 
@@ -47,8 +46,9 @@ export default function Laundry() {
             <Image
               src={SchedulePickupMobile}
               alt="See Our Pricing"
+              width={500}
+              height={50}
               priority
-              placeholder="blur"
             />
           </div>
           <h1 className=" text-4xl  text-center font-chicle text-blue font-[500] mb-4 mt-8 ">A Laundry Service For Everyone</h1>
