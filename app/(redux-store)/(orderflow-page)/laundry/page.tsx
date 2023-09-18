@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import SchedulePickup from "@/public/assets/images/schedule-pickup.webp"
 
 export default function Laundry() {
     return (
@@ -28,11 +29,10 @@ export default function Laundry() {
           </div>
           <div className="w-full lg:w-40 items-end justify-end ">
             <Image
-              src="/assets/images/schedule-pickup.webp"
-              blurDataURL={'/assets/images/schedule-pickup.webp'}
+              src={SchedulePickup}
               alt="See Our Pricing"
-              width={630}
-              height={50}
+              // width={630}
+              // height={50}
               priority
               placeholder="blur"
               className="lg:absolute right-0 top-28 pt-2 "
