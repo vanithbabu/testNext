@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import SchedulePickup from "@/public/assets/images/schedule-pickup.webp"
+import SchedulePickupMobile from "@/public/assets/images/hero_banner.webp"
 
 export default function Laundry() {
     return (
@@ -44,11 +45,8 @@ export default function Laundry() {
         <div className="lg:hidden">
           <div className="flex justify-center lg:justify-center">
             <Image
-              src="/assets/images/hero_banner.webp"
-              blurDataURL={'/assets/images/hero_banner.webp'}
+              src={SchedulePickupMobile}
               alt="See Our Pricing"
-              width={500}
-              height={50}
               priority
               placeholder="blur"
             />
