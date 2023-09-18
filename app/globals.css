@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Chicle';
+  src: url('/assets/fonts/Chicle/Chicle-Regular.ttf') format('truetype');
+}
+ @font-face {
+  font-family: "Futura PT Book";
+  src:  url('/assets/fonts/FuturaPT//FuturaPTBook.otf') format('opentype');
+}
+@font-face {
+  font-family: "Futura PT Bold";
+  src:  url('/assets/fonts/FuturaPT/FuturaPTBold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Futura PT Light';
+  src:  url('/assets/fonts/FuturaPT/FuturaPTLight.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Futura PT Medium";
+  src:  url('/assets/fonts/FuturaPT/FuturaPTMedium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Futura PT Demi";
+  src:  url('/assets/fonts/FuturaPT/FuturaPTDemi.otf') format('opentype');
+} 
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  opacity: 0.25;
+  border: 1px solid #C0C4C7 !important;
+}
+
+.lineheight15
+{
+  line-height: 1.5;
+}
+/* Toast css */
+.custom-toast-item {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border-left: 4px solid orange;
+}
+.custom-toast-success {
+  border-left: 4px solid #61d345;
+}
+.custom-toast-error {
+  border-left: 4px solid #ff4b4b;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input {
+  caret-color: orange;
+}
+.expireinputsize
+{
+  font-size: 16px!important;
+}

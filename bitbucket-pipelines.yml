@@ -1,0 +1,20 @@
+image: node:latest
+
+pipelines:
+  branches:
+    qa:
+      - step:
+          name: Deploy to QA
+          deployment: qa
+          script:
+            - echo $SSH_PRIVATE_KEY_QA > bitbucket_private_key_qa
+            - chmod 600 bitbucket_private_key_qa
+            - timeout 10m ssh -i bitbucket_private_key_qa ubuntu@3.130.17.207 "bash -s" < deploy.sh qa
+    development:
+      - step:
+          name: Deploy to development
+          deployment: development
+          script:
+            - echo $SSH_PRIVATE_KEY_DEV > bitbucket_private_key_dev
+            - chmod 600 bitbucket_private_key_dev
+            - timeout 10m ssh -i bitbucket_private_key_dev ubuntu@3.128.228.248 "bash -s" < deploy.sh development
