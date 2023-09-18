@@ -46,9 +46,8 @@ export default function Laundry() {
             <Image
               src={SchedulePickupMobile}
               alt="See Our Pricing"
-              style={{maxWidth:"100%",
-            height:'auto'
-            }}
+              width={500}
+              height={50}
               priority
             />
           </div>
