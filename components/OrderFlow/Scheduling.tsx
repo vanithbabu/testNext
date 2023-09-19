@@ -4,7 +4,8 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useForm, FormProvider } from "react-hook-form";
 import { fetchselectedDate } from "@/store/features/selectedDate/selectedDateSlice";
-import { useAppDispatch,useAppSelector } from "@/store";
+import { useAppDispatch } from "@/store";
+import FlowerImg from '@/public/assets/icons/flower.svg';
 import { Toast } from "@/lib/toast";
 interface SchedulingDetailsProps {
   currentStep: number;
@@ -78,13 +79,11 @@ const Scheduling: React.FC<SchedulingDetailsProps> = ({
       <div className="flex flex-wrap items-center justify-between md:px-10" id={ID} ref={schedulingDetailReference}>
         <div className="flex gap-1 md:gap-6 justify-start items-center py-4 pt-[18px]">
           <Image
-            src={"/assets/icons/flower.svg"}
-            blurDataURL={"/assets/icons/flower.svg"}
+            src={FlowerImg}           
             alt={"flower"}
             width={24}
             height={24}
             priority
-            placeholder="blur"
           />
           <h2 className="font-chicle text-orange  text-3xl md:text-5xl">
             Scheduling

@@ -14,6 +14,8 @@ import {useEffect } from "react";
 import Cookies from 'js-cookie';
 import { useRouter } from "next/navigation";
 import Bugsnag from '@/lib/bugsnagConfig'
+import MobileHeroImg from '@/public/assets/images/mobile-login.svg'
+import HeroImg from '@/public/assets/images/login.webp';
 
 export default function ForgotPassword() {
 
@@ -99,23 +101,19 @@ export default function ForgotPassword() {
         <div className="w-full lg:w-40 flex justify-center lg:items-end lg:justify-end order-1 lg:order-2">
 
           <Image
-            src="/assets/images/mobile-login.svg"
-            blurDataURL={"/assets/images/mobile-login.svg"}
-            alt="See Our Pricing"
+            src={MobileHeroImg}
+            alt="Forgot password"
             width={500}
             height={50}
             priority
-            placeholder="blur"
             className="lg:hidden  pt-4"
           />
           <Image
-            src="/assets/images/login.webp"
-            blurDataURL={"/assets/images/login.webp"}
-            alt="See Our Pricing"
+            src={HeroImg}
+            alt="Forgot password"
             width={630}
             height={50}
             priority
-            placeholder="blur"
             className="hidden lg:block lg:absolute right-0 top-28" 
           />
         </div>

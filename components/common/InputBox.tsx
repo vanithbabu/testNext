@@ -3,6 +3,8 @@ import { CustomInputBoxProps } from "@/types";
 import Image from "next/image";
 import { useFormContext } from 'react-hook-form';
 import {useState} from 'react';
+import EyeOpenImg from '@/public/assets/icons/eye-show.svg'
+import EyeCloseImg from '@/public/assets/icons/eye-close.svg'
 const InputBox = ({
   isDisabled,
   isRequired,
@@ -36,23 +38,20 @@ const InputBox = ({
     {error ? <span role="alert" className={`text-red mb-1 font-FuturaPTBook text-xl font[450] ${errorStyles}`}>{error}</span>: <div className="my-4"></div>}
     {icon && !isPasswordVisible &&
       <Image
-        src="/assets/icons/eye-close.svg"
-        alt="eye show"
-        blurDataURL={"/assets/icons/eye-close.svg"}
+        src={EyeCloseImg}
+        alt="eye close"
         width={20}
         height={20}
         priority
-        placeholder="blur"
         className={`absolute ${IconStyle}`}
         onClick={() => setIsPasswordVisible(true)}
       />}
     {icon && isPasswordVisible && <Image
-      src="/assets/icons/eye-show.svg"
-      alt="eye show"
-      blurDataURL={"/assets/icons/eye-show.svg"}
+      src={EyeOpenImg}
+      alt="eye open"
+      priority
       width={20}
       height={20}
-      placeholder="blur"
       className={`absolute ${IconStyle}`}
       onClick={() => setIsPasswordVisible(false)}
     />}

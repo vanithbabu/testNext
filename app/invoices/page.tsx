@@ -6,6 +6,7 @@ import {postApi} from '@/lib/apiCallMethod';
 import Bugsnag from '@/lib/bugsnagConfig'
 import Loading from "@/app/(redux-store)/(dashboard-page)/dashboard/loading";
 import {shortPickUpDateFormat} from '@/lib/dateConversion';
+import MargoLogo from '@/public/assets/images/margo_logo.svg';
 
 const Invoice = () => {
     const params = useSearchParams();
@@ -87,13 +88,13 @@ const Invoice = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 py-8  text-center md:text-left">
                         <div className="">
                             <Image
-                                src="/assets/images/margo_logo.svg"
+                                src={MargoLogo}
                                 alt="Margo Logo"
                                 width="600"
                                 height={45}
-                                blurDataURL={"/assets/images/margo_logo.svg"}
+                               
                                 priority
-                                placeholder="blur"
+                               
                             />
                         </div>
                         <div className="text-right">
@@ -232,13 +233,12 @@ return(
                 <div className="mt-8 px-8">
                     <Image
                         className='mx-auto'
-                        src="/assets/images/margo_logo.svg"
+                        src={MargoLogo}
                         alt="Margo Logo"
                         width="600"
                         height={45}
-                        blurDataURL={"/assets/images/margo_logo.svg"}
                         priority
-                        placeholder="blur"
+                       
                     />
                 </div>
             </section>

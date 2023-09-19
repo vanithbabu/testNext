@@ -16,10 +16,10 @@ import AutoComplete from "../AutoComplete";
 import { fetchscheduling } from "@/store/features/scheduling/schedulingSlice";
 import { useAppDispatch, useAppSelector } from "@/store";
 import { fetchPreference } from "@/store/features/preferences/preferenceSlice";
-import { profileInputLabelStyle } from "@/styles";
 import { Toast } from "@/lib/toast";
 import { fetchAddress } from "@/store/features/address/addressSlice";
 import Bugsnag from '@/lib/bugsnagConfig'
+import FlowerImg from '@/public/assets/icons/flower.svg';
 
 interface OrderDetailsProps {
   currentStep: number;
@@ -173,13 +173,11 @@ if(isUnitNumber && values.unit_number!='' )
       >
         <div className="flex gap-1 md:gap-6 justify-start items-center py-4 pt-[18px]">
           <Image
-            src={"/assets/icons/flower.svg"}
-            blurDataURL={"/assets/icons/flower.svg"}
+            src={FlowerImg}
             alt={"flower"}
             width={24}
             height={24}
             priority
-            placeholder="blur"
           />
           <h2 className="font-chicle text-orange  text-3xl md:text-5xl">
             Order Details
@@ -255,20 +253,6 @@ if(isUnitNumber && values.unit_number!='' )
                   " w-full sm:w-[350px]  rounded-[15px] border border-[#92999E] mt-4"
                 }
               />
-              {/* {!showUnit && (
-                <div className="flex items-center gap-2">
-                  <Image
-                    src="/assets/icons/add-new.svg"
-                    alt="add unit number"
-                    width={24}
-                    height={24}
-                    onClick={() => setShowUnit(true)}
-                  />
-                  <p className="text-2xl text-[#1E1E1E] font-FuturaPTDemi mt-1">
-                    Add Unit Number
-                  </p>
-                </div>
-              )} */}
               {showUnitNumber && (
                 <>
                 <p className="text-2xl text-[#1E1E1E] font-FuturaPTDemi">

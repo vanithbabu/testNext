@@ -13,6 +13,9 @@ import { postApi,getApi } from "@/lib/apiCallMethod";
 import { Toast,capitalizeFirstWord } from '@/lib/toast';
 import { fetchCreditCard } from "@/store/features/creditCard/creditCardSlice";
 import Bugsnag from '@/lib/bugsnagConfig'
+import StripeSafeImg from '@/public/assets/images/stripe-safe.webp';
+import StripeButtonImg from '@/public/assets/images/stripe-button.webp';
+import PaymentImg from '@/public/assets/images/payment-icons.webp';
 
 const AddCard = ({ handleModalClose, handleModalSubmit }: AddCardProps) => {
   const dispatch = useAppDispatch();
@@ -135,33 +138,28 @@ const AddCard = ({ handleModalClose, handleModalSubmit }: AddCardProps) => {
             <div className="flex  gap-1 justify-between">
               <Image
                 className="my-2"
-                src={"/assets/images/stripe-safe.webp"}
+                src={StripeSafeImg}
                 alt="Margo Logo"
                 width={230}
                 height={30}
-                blurDataURL={"/assets/images/stripe-safe.webp"}
                 placeholder="blur"
                 priority
               />
               <Image
                 className="my-2"
-                src={"/assets/images/stripe-button.webp"}
+                src={StripeButtonImg}
                 alt="Margo Logo"
                 width={100}
                 height={40}
-                blurDataURL={"/assets/images/stripe-button.webp"}
-                placeholder="blur"
                 priority
               />
             </div>
             <hr />
             <Image
-              src={"/assets/images/payment-icons.webp"}
+              src={PaymentImg}
               alt="Margo Logo"
               width={480}
               height={48}
-              blurDataURL={"/assets/images/payment-icons.webp"}
-              placeholder="blur"
               layout="responsive"
               priority
             />

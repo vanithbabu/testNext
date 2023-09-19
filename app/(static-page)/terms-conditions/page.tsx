@@ -14,7 +14,7 @@ interface termsConditionContent {
   created_at: Date;
   updated_at: Date;
 }
-
+export const dynamic='force-dynamic';
 async function getData() {
   try {
     const response =  await getApi('/v7/page/terms-conditions');

@@ -1,18 +1,16 @@
 import Image from "next/image";
 import {SupportTeamCardProps} from '@/types';
+import MiaImg from '@/public/assets/images/mia.webp';
 const SupportTeamCard = ({text,textStyle}:SupportTeamCardProps) => {
   return (
     <div className="flex flex-col justify-center items-center lg:items-start">
     <div className="flex gap-2 items-end ">
   <Image
-    src="/assets/images/mia.webp"
+    src={MiaImg}
     alt="margos customer support"
-    blurDataURL={"/assets/images/mia.webp"}
     width={200}
     height={50}
-    placeholder="blur"
     priority
-    
   />
   <div className="mb-2">
   <h2 className=" text-blue text-4xl pb-2 font-chicle">I{"'"}m Mia</h2>

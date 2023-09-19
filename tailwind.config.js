@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     fontFamily: {
       chicle:  ['var(--font-chicle)'],
-      FuturaPTMedium: ['var(--font-futura-pt-book)'],
-      FuturaPTBook:  ['var(--font-futura-pt-bold)'],
+      FuturaPTMedium: ['var(--font-futura-pt-medium)'],
+      FuturaPTBook:  ['var(--font-futura-pt-book)'],
       FuturaPTLight:  ['var(--font-futura-pt-light)'],
       FuturaPTBold:  ['var(--font-futura-pt-bold)'],
       FuturaPTDemi:  ['var(--font-futura-pt-demi)'],

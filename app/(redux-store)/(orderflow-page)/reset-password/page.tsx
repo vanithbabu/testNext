@@ -11,6 +11,8 @@ import { errorToast } from '@/constants/utis';
 import { Toast,capitalizeFirstWord } from '@/lib/toast';
 import  {DecryptedData,ResetPassworFormValues }from '@/types';
 import Bugsnag from '@/lib/bugsnagConfig'
+import MobileHeroImg from '@/public/assets/images/mobile-login.svg'
+import HeroImg from '@/public/assets/images/login.webp';
 
 export default function ResetPassword() {
   const [btnDisable, setbtnDisable] = useState(false)
@@ -118,9 +120,8 @@ export default function ResetPassword() {
         <div className="w-full lg:w-40 flex justify-center lg:items-end lg:justify-end order-1 lg:order-2">
 
           <Image
-            src="/assets/images/mobile-login.svg"
-            blurDataURL={'/assets/images/mobile-login.svg'}
-            alt="See Our Pricing"
+            src={MobileHeroImg}
+            alt="Reset password"
             width={500}
             height={50}
             priority
@@ -128,9 +129,8 @@ export default function ResetPassword() {
             className="lg:hidden  pt-4"
           />
           <Image
-            src="/assets/images/login.webp"
-            blurDataURL={'/assets/images/login.webp'}
-            alt="See Our Pricing"
+            src={HeroImg}
+            alt="Reset password"
             width={630}
             height={50}
             priority

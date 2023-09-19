@@ -3,7 +3,7 @@ import { AddCard, CustomButton, ModalPopup } from "@/components";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useAppSelector } from "@/store";
-
+import FlowerImg from '@/public/assets/icons/flower.svg';
 interface PaymentDetailsProps {
   currentStep: number;
   nextStep: (values: number) => void;
@@ -48,13 +48,11 @@ if(cards.length==0)
       >
         <div className="flex gap-6 justify-start items-center py-4 pt-[18px]">
           <Image
-            src={"/assets/icons/flower.svg"}
-            blurDataURL={"/assets/icons/flower.svg"}
+            src={FlowerImg}
             alt={"flower"}
             width={24}
             height={24}
             priority
-            placeholder="blur"
           />
           <h2 className="font-chicle text-orange  text-3xl md:text-5xl">
             Payment

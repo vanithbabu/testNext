@@ -1,8 +1,7 @@
 import PageHeading from "@/components/common/PageHeading"; // Import PageHeading component
 import type { Metadata } from "next"; // Import Metadata type from "next"
-import Image from "next/image"; // Import Image component from Next.js
 import { getApi } from "@/lib/apiCallMethod"; 
-import FaqAcoordion from "@/components/common/FaqAccordion";
+import FaqAccordion from "@/components/common/FaqAccordion";
 import Bugsnag from '@/lib/bugsnagConfig'
 
 
@@ -36,7 +35,7 @@ async function getData() {
   }
  
 }
-
+export const dynamic='force-dynamic';
 // Faq component
 export default async function Faq() {
   const data = await getData(); 
@@ -48,7 +47,7 @@ export default async function Faq() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-8">
           {data.map((item: FaqItem) => 
             item.is_active && (
-            <FaqAcoordion key={item.question} question={item.question} answer={item.answer}/>
+            <FaqAccordion key={item.question} question={item.question} answer={item.answer}/>
           ))}
         </div>
       </div>

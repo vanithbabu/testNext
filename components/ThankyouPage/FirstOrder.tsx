@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useAppSelector } from '@/store';
 import {dayOfWeekFormat} from '@/lib/dateConversion';
 import { useEffect, useState } from "react";
+import FirstOrderThankYouImg from '@/public/assets/images/Thankyou_page_1.webp';
 export const FirstOrder = () => {
     const router = useRouter();
     const [loading,setLoading]=useState(true);
@@ -58,13 +59,11 @@ export const FirstOrder = () => {
                             </div>
                         </div>
                         <Image
-                            src="/assets/images/Thankyou_page_1.webp"
-                            blurDataURL={'/assets/images/Thankyou_page_1.webp'}
+                            src={FirstOrderThankYouImg}
                             alt="Thankyou page"
                             width={320}
                             height={40}
                             priority
-                            placeholder="blur"
                         />
                     </div>
                 </div>

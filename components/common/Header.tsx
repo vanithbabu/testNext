@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { headerLinks } from "@/constants";
+import MargoLogo from '@/public/assets/images/margo_logo.svg';
 
 const Header = () => {
   const [navbar, setNavbar] = useState<boolean>(false);
@@ -11,13 +12,11 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto  flex  justify-between items-center py-6 px-4 ">
         <Link href="/" className="flex justify-center items-center">
           <Image
-            src="/assets/images/margo_logo.svg"
+            src={MargoLogo}
             alt="Margo Logo"
             width="400"
-            height={45}
-            blurDataURL={"/assets/images/margo_logo.svg"}
+            height={45}   
             priority
-            placeholder="blur"
           />
         </Link>
         <ul className="hidden  gap-8 xl:gap-12 text-blue text-xl xl:text-2xl font-FuturaPTBook font-semibold  lg:flex">

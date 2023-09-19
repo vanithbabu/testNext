@@ -28,7 +28,6 @@ const FuturaPTDemi = localFont({
   variable: '--font-futura-pt-demi'
 });
 
-
 export const metadata: Metadata = {
   title: 'Laundry Pickup and Delivery Service | Margo Laundry',
   description: 'Laundry Pickup and Delivery Service - $1.50/lb + Free Delivery + No Fees.',

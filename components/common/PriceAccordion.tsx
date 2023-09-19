@@ -1,29 +1,29 @@
 "use client";
 import Image from "next/image";
 import { useState} from "react"
-export default function PriceAcoordion( { title, content} : any) {
+import FlowerImg from '@/public/assets/icons/flower.svg'
+export default function PriceAccordion( { title, content} : any) {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <div className="max-w-sm md:max-w-xl mx-auto gap-4 flex  justify-between items-center">
         <div
-          className="w-full py-4 rounded-lg cursor-pointer"
+          className="w-full py-2 rounded-lg cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {/* <hr  style={{ backgroundColor: 'orange !important' , borderColor: 'orange !important', height: '3px' , opacity: '1 !important'}}/> */}
+       
           <div className="flex items-center justify-between pt-4 md:px-4 border-t-2 border-[orange]">
           <div
               className="flex gap-6 justify-start items-start"
             >
               <Image
-                src={"/assets/icons/flower.svg"}
-                blurDataURL={'/assets/icons/flower.svg'}
+                src={FlowerImg}
                 alt={"flower"}
                 width={45}
                 height={45}
-                placeholder="blur"
+                priority
                 
               />
-            <h2 className="font-chicle text-3xl md:text-4xl  mb-2  font text-blue">
+            <h2 className="font-chicle text-3xl md:text-4xl    font text-blue">
                { title} 
             </h2>
             </div>
@@ -41,7 +41,7 @@ export default function PriceAcoordion( { title, content} : any) {
           </div>
           {isOpen && (
             <div className="md:px-10 ml-16 md:ml-12">
-              <p className="pb-2  text-xl  md:text-2xl   text-yellow font-FuturaPTMedium ">
+              <p className="py-4  text-xl  text-yellow font-FuturaPTMedium ">
                 { content}
               </p>
             </div>

@@ -27,6 +27,10 @@ import dynamic from 'next/dynamic';
 import  {LoginFormValues }from '@/types';
 import Cookies from 'js-cookie';
 import Bugsnag from '@/lib/bugsnagConfig'
+import GoogleImg from '@/public/assets/icons/google.svg';
+import FaceBookImg from '@/public/assets/icons/facebook.svg';
+import MobileHeroImg from '@/public/assets/images/mobile-login.svg'
+import HeroImg from '@/public/assets/images/login.webp';
 
 import { fetchUser } from "@/store/features/createUser/createUserSlice";
 const DynamicLoginSocialGoogle = dynamic(
@@ -169,7 +173,7 @@ export default function Login() {
               <div className="w-full">
                 <Link href={`${process.env.NEXT_PUBLIC_API_END_POINT}/v4/login/google`}>
                 <CustomButton
-                  rightIcon="/assets/icons/google.svg"
+                  rightIcon={GoogleImg}
                   title="Google"
                   btnType="submit"
                   inputStyles="bg-white md:w-[200px] flex justify-center text-xl lg:text-2xl text-[#828282] border font-FuturaPTMedium hover:bg-blue hover:text-white hover:border-blue hover:border inline-flex gap-2 lg:gap-2  px-8 items-center"
@@ -179,7 +183,7 @@ export default function Login() {
                 <div className="w-full">
                 <Link href={`${process.env.NEXT_PUBLIC_API_END_POINT}/v4/login/facebook`}>
                 <CustomButton
-                  rightIcon={'/assets/icons/facebook.svg'}
+                  rightIcon={FaceBookImg}
                   title="Facebook"
                   btnType="submit"
                   inputStyles="bg-white md:w-[200px] flex justify-center  text-xl lg:text-2xl text-[#828282] border font-FuturaPTMedium hover:bg-blue hover:text-white hover:border-blue hover:border inline-flex gap-2 lg:gap-2  px-8 items-center"
@@ -255,23 +259,19 @@ export default function Login() {
         <div className="w-full lg:w-40 flex justify-center lg:items-end lg:justify-end order-1 lg:order-2">
 
           <Image
-            src="/assets/images/mobile-login.svg"
-            blurDataURL={'/assets/images/mobile-login.svg'}
-            alt="See Our Pricing"
+            src={MobileHeroImg}
+            alt="login"
             width={500}
             height={50}
             priority
-            placeholder="blur"
             className="lg:hidden pb-4 pt-4"
           /> 
           <Image
-            src="/assets/images/login.webp"
-            blurDataURL={'/assets/images/login.webp'}
-            alt="See Our Pricing"
+            src={HeroImg}
+            alt="login"
             width={630}
             height={50}
             priority
-            placeholder="blur"
             className="hidden lg:block lg:absolute right-0 top-28"
           />
         </div>

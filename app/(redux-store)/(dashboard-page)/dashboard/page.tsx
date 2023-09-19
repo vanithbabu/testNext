@@ -11,13 +11,14 @@ import {
 } from "@/components";
 import { dashboardStyle, profileInputLabelStyle } from "@/styles";
 import Image from "next/image";
+import TrashImg from '@/public/assets/icons/trash.svg';
+import AddNewCardImg from '@/public//assets/icons/add-new.svg';
 import { ProfileSchema } from "@/validations/dashboard.schema";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { deleteApi, postApi, patchApi } from "@/lib/apiCallMethod";
 import { useAppSelector, useAppDispatch } from "@/store";
 import { Toast,capitalizeFirstWord} from "@/lib/toast";
 import { errorToast } from "@/constants/utis";
-
 import { ProfileFormValues } from "@/types";
 import { fetchDashboard } from "@/lib/apiCall";
 import { fetchProfile } from "@/store/features/profile/profileSlice";
@@ -313,13 +314,10 @@ export default function Profile() {
                         <Image
                           onClick={() => DeleteCard(card.id)}
                           className="cursor-pointer"
-                          src="/assets/icons/trash.svg"
+                          src={TrashImg}
                           alt="Delete Icon"
                           width={20}
                           height={20}
-                          blurDataURL={'/assets/icons/trash.svg'}
-                          placeholder="blur"
-                          priority
                         />
                       )}
                     </div>{" "}
@@ -332,13 +330,10 @@ export default function Profile() {
                 onClick={() => handleModalOpen("Card")}
               >
                 <Image
-                  src="/assets/icons/add-new.svg"
+                  src={AddNewCardImg}
                   alt="Add New Card"
                   width={20}
                   height={20}
-                  placeholder="blur"
-                  blurDataURL={'/assets/icons/add-new.svg'}
-                  priority
                 />
 
                 <p className="text-lg text-[#048ABF] font-FuturaPTMedium  font-[450] ">

@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 import { pricing } from "@/constants";
 import Link from "next/link";
 import Image from "next/image";
-import PriceAcoordion from "@/components/common/PriceAccordion";
+import PriceAccordion from "@/components/common/PriceAccordion";
+import ClothBasketImg from '@/public/assets/images/cloth_basket.webp';
 export const metadata: Metadata = {
   title: "Pricing — Laundry Pickup and Delivery Service | Margo's Laundry",
   description:
@@ -19,13 +20,11 @@ export default function Pricing() {
         <div className="grid grid-cols-1 lg:grid-cols-[60%_40%] gap-4 place-content-between mt-4 lg:mt-8">
           <div className="flex justify-center items-start   pt-2 lg:pt-8 pb-8">
             <Image
-              src={"/assets/images/cloth_basket.webp"}
-              blurDataURL={'/assets/images/cloth_basket.webp'}
+              src={ClothBasketImg}
               priority
               alt={"flower"}
               width={600}
-              height={350}
-              placeholder="blur"
+              height={350}   
               className="object-contain"
             />
           </div>
@@ -39,9 +38,9 @@ export default function Pricing() {
                 <span className="text-9xl">$ {pricing.price}</span> /lb.
               </p>
               {pricing.description.map((item) => (
-                <PriceAcoordion key={item.title} title={item.title} content={item.content} />
+                <PriceAccordion key={item.title} title={item.title} content={item.content} />
               ))}
-              <div className="px-8 flex justify-center lg:block mb-8 lg:ml-4 lg:mt-4">
+              <div className="px-8 flex justify-center lg:block mb-8 lg:ml-4 lg:mt-8">
               <Link
               href="/laundry"
               className="rounded-full  bg-blue text-white py-2 px-12 text-3xl font-FuturaPTMedium  hover:opacity-80"

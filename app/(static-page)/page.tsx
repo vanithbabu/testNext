@@ -1,6 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import {SubscribeForm} from '@/components';
+import HeroBanner from '@/public/assets/images/hero_banner.webp';
+import SeeOurPricingImg  from '@/public/assets/images/see_our_pricing.webp';
+import HowitsWorkImg from '@/public/assets/images/howitswork.webp';
 export default function Home() {
   return (
     <main className=" font-FuturaPTMedium  min-h-screen ">
@@ -15,10 +18,10 @@ export default function Home() {
           <p className="text-orange lg:leading-[4rem] font-chicle text-3xl lg:text-5xl text-center ">
             Professionally washing, drying, & folding laundry for just $1.50 per pound </p>
 
-          <p className="text-yellow  text-3xl pt-4 text-center">
+          <p className="text-yellow font-FuturaPTMedium  text-3xl pt-4 text-center">
             Free Delivery | No Fees
           </p>
-          <p className="text-yellow  text-3xl pt-2 text-center">
+          <p className="text-yellow font-FuturaPTMedium  text-3xl pt-2 text-center">
             No Minimums | No Tipping
           </p>
           <div className="text-center  pt-8 mb-8 ">
@@ -33,13 +36,10 @@ export default function Home() {
 
         <div className="flex justify-center lg:justify-center">
           <Image
-            src="/assets/images/hero_banner.webp"
-            blurDataURL={'/assets/images/hero_banner.webp'}
+            src={HeroBanner}
             alt="See Our Pricing"
-            width={500}
-            height={50}
+         
             priority
-            placeholder="blur"
           />
         </div>
       </section>
@@ -49,13 +49,10 @@ export default function Home() {
           <div className="px-4">
             <div className="flex justify-center mb-8 lg:mb-0 lg:mt-0  lg:justify-start">
               <Image
-                src="/assets/images/see_our_pricing.webp"
-                blurDataURL={'/assets/images/see_our_pricing.webp'}
+                src={SeeOurPricingImg}
                 alt="See Our Pricing"
                 width={400}
-                height={50}
-                priority
-                placeholder="blur"
+                height={400}
               />
             </div>
           </div>
@@ -106,13 +103,10 @@ export default function Home() {
           </div>
           <div className="flex justify-center mt-8 lg:mt-0  lg:justify-end">
             <Image
-              src="/assets/images/howitswork.webp"
-              blurDataURL={'/assets/images/howitswork.webp'}
+              src={HowitsWorkImg}
               alt=" How It Works"
               width={250}
-              height={40}
-              priority
-              placeholder="blur"
+              height={361}
             />
           </div>
         </div>

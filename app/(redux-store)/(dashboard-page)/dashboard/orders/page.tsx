@@ -18,6 +18,7 @@ import {fetchAddress} from '@/store/features/address/addressSlice';
 import { fetchUser } from "@/store/features/createUser/createUserSlice";
 import Loading from "../loading";
 import Bugsnag from '@/lib/bugsnagConfig'
+import OrderImg from '@/public/assets/icons/order_icon.svg';
 
 export default function Orders() {
 
@@ -87,14 +88,10 @@ try {
         <section className="mt-4  shadow-lg bg-[#F6FBFE] px-8 py-4 flex flex-wrap gap-4   lg:gap-12 lg:mt-12 justify-between">
           <div className="flex gap-8 lg:gap-16">
             <Image
-              src="/assets/icons/order_icon.svg"
+              src={OrderImg}
               alt="Margo Logo"
-              blurDataURL={'/assets/icons/order_icon.svg'}
-              width="75"
+              width={75}
               height={75}
-              placeholder="blur"
-              priority
-
             />
         <>
         {newOrder?(

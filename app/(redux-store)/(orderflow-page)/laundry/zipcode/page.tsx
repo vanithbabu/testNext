@@ -24,6 +24,7 @@ import { setLogin } from "@/store/features/auth/authSlice";
 import { fetchCreditCard } from "@/store/features/creditCard/creditCardSlice";
 import { fetchOrder } from "@/store/features/orders/orderSlice";
 import { fetchProfile } from "@/store/features/profile/profileSlice";
+import FlowerImg from '@/public/assets/icons/flower.svg';
 import Bugsnag from '@/lib/bugsnagConfig'
 
 import Cookies from "js-cookie";
@@ -176,12 +177,10 @@ export default function ZipCode() {
 
                 <div key={data} className="flex gap-4 justify-start items-start mb-4 lg:mb-6  ">
                   <Image
-                    src={"/assets/icons/flower.svg"}
-                    blurDataURL={'/assets/icons/flower.svg'}
+                    src={FlowerImg}
                     alt={"flower"}
                     width={40}
                     height={40}
-                    placeholder="blur"
                     priority
                   />
                   <div className="flex flex-col mb-2">

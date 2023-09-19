@@ -19,6 +19,7 @@ import { fetchAddress } from "@/store/features/address/addressSlice";
 import { fetchzipcode } from "@/store/features/zipcode/zipcodeSlice";
 import { fetchscheduling } from "@/store/features/scheduling/schedulingSlice";
 import { fetchselectedDate } from "@/store/features/selectedDate/selectedDateSlice";
+import DashboardMargoLogo from '@/public/assets/images/dashboard_margo_logo.svg';
 
 const SideBar = () => {
   const [isMobile, setMobileOpen] = useState<boolean>(false);
@@ -115,13 +116,11 @@ const SideBar = () => {
         <div className="h-full  py-12  bg-blue ">
           <Link href="/dashboard" className="flex justify-center items-center">
             <Image
-              src="/assets/images/dashboard_margo_logo.svg"
+              src={DashboardMargoLogo}
               alt="Dashboard Margo Logo"
-              blurDataURL={"/assets/images/dashboard_margo_logo.svg"}
               width="180"
               height={92}
               priority
-              placeholder="blur"
             />
           </Link>
 

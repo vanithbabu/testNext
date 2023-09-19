@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from 'next/navigation'
-import Flower from '@/public/assets/images/flower.svg';
+import FlowerImg from '@/public/assets/images/flower.svg';
 import MargoLogo from '@/public/assets/images/margo_logo.svg';
 const OrderFlowHeader = () => {
   const pathname = usePathname()
@@ -11,7 +11,7 @@ const OrderFlowHeader = () => {
       <div className="absolute right-0">
         <Image
           className="hidden lg:block"
-          src={Flower}
+          src={FlowerImg}
           alt="Margo Logo"
           width="120"
           height={45}
@@ -26,7 +26,7 @@ const OrderFlowHeader = () => {
             alt="Margo Logo"
             width="500"
             height={45}
-            priority    
+            priority
           />
         </Link>
         { pathname !== '/laundry/help' ? <Link href="/laundry/help" className="flex cursor-pointer z-30 text-sm hover:opacity-80 justify-center items-center md:text-md lg:text-lg bg-green text-white px-4 py-[4px] md:px-8 md:py-[8px] font-[600]  rounded-full font-FuturaPTBook">

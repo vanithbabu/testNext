@@ -1,30 +1,29 @@
 "use client";
 import Image from "next/image";
 import { useState} from "react"
-export default function FaqAcoordion( { question, answer} : any) {
+import FlowerImg from '@/public/assets/icons/flower.svg';
+export default function FaqAccordion( { question, answer} : any) {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className="flex gap-4 items-start pt-3 mb-4 cursor-pointer border-t-2 border-[orange]" onClick={() => setIsOpen(!isOpen)} key={question}>
+        <div className="flex gap-4 items-start pt-4 cursor-pointer border-t-2 border-[orange]" onClick={() => setIsOpen(!isOpen)} key={question}>
         <Image
-          src="/assets/icons/flower.svg"
-          blurDataURL="/assets/icons/flower.svg"
+          src={FlowerImg}  
           alt="flower"
           width={45}
           height={45}
-          priority
-          placeholder="blur"
+          priority      
         />
         <div className="flex flex-col">
-          <h2 className="font-chicle text-3xl md:text-4xl mb-2 font text-blue">
+          <h2 className="font-chicle text-3xl md:text-4xl  font text-blue">
             {question}
           </h2>
           {isOpen ?
             <div
-                className="pb-2 text-xl md:text-2xl text-yellow font-FuturaPTMedium"
+                className=" pt-4 text-xl  text-yellow font-FuturaPTMedium"
                 dangerouslySetInnerHTML={{ __html: answer }}
             />
             :
-            <div className="my-10"></div>
+            <div></div>
             }
         </div>
         <div className="ml-auto">

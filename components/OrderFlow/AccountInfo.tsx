@@ -19,6 +19,9 @@ import { fetchUser } from "@/store/features/createUser/createUserSlice";
 import { LoginApi } from "@/lib/apiCallMethod";
 import { setLogin } from "@/store/features/auth/authSlice";
 import Bugsnag from '@/lib/bugsnagConfig'
+import FlowerImg from '@/public/assets/icons/flower.svg';
+import GoogleImg from '@/public/assets/icons/google.svg';
+import FaceBookImg from '@/public/assets/icons/facebook.svg';
 
 import dynamic from 'next/dynamic';
 const DynamicLoginSocialGoogle = dynamic(
@@ -292,13 +295,11 @@ export const AccountInfo: React.FC<AccountInfoDetailsProps> = ({
       >
         <div className="flex gap-6 justify-start items-center py-4 pt-[18px]">
           <Image
-            src={"/assets/icons/flower.svg"}
-            blurDataURL={"/assets/icons/flower.svg"}
+            src={FlowerImg}
             alt={"flower"}
             width={24}
             height={24}
             priority
-            placeholder="blur"
           />
           <h2 className="font-chicle text-orange  text-3xl md:text-5xl">
             Account Information
@@ -315,7 +316,7 @@ export const AccountInfo: React.FC<AccountInfoDetailsProps> = ({
           <Link href={`${process.env.NEXT_PUBLIC_API_END_POINT}/v4/login/google`}>
                 <CustomButton
                   // handleClick={()=> login()}
-                  rightIcon="/assets/icons/google.svg"
+                  rightIcon={GoogleImg}
                   title="Google"
                   btnType="submit"
                   inputStyles="bg-white md:w-[200px] flex justify-center text-xl lg:text-2xl text-[#828282] border font-FuturaPTMedium hover:bg-blue hover:text-white hover:border-blue hover:border inline-flex gap-2 lg:gap-2  px-8 items-center"
@@ -323,7 +324,7 @@ export const AccountInfo: React.FC<AccountInfoDetailsProps> = ({
               </Link>
               <Link href={`${process.env.NEXT_PUBLIC_API_END_POINT}/v4/login/facebook`}>
                 <CustomButton
-                  rightIcon={'/assets/icons/facebook.svg'}
+                  rightIcon={FaceBookImg}
                   title="Facebook"
                   btnType="submit"
                   inputStyles="bg-white md:w-[200px] flex justify-center  text-xl lg:text-2xl text-[#828282] border  hover:bg-blue hover:text-white hover:border-blue hover:border inline-flex gap-2 lg:gap-2  px-8 items-center"

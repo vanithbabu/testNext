@@ -1,8 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import SchedulePickup from "@/public/assets/images/schedule-pickup.webp"
-import SchedulePickupMobile from "@/public/assets/images/hero_banner.webp"
-
+import SchedulePickupImg from '@/public/assets/images/schedule-pickup.webp';
+import MobileSchedulePickupImg from '@/public/assets/images/hero_banner.webp';
 export default function Laundry() {
     return (
       <main className="max-w-7xl mx-auto px-4 lg:px-8 lg:my-16 lg:min-h-[60vh] ">
@@ -30,7 +29,7 @@ export default function Laundry() {
           </div>
           <div className="w-full lg:w-40 items-end justify-end ">
             <Image
-              src={SchedulePickup}
+              src={SchedulePickupImg}
               alt="See Our Pricing"
               width={630}
               height={50}
@@ -44,7 +43,7 @@ export default function Laundry() {
         <div className="lg:hidden">
           <div className="flex justify-center lg:justify-center">
             <Image
-              src={SchedulePickupMobile}
+              src={MobileSchedulePickupImg}
               alt="See Our Pricing"
               width={500}
               height={50}
