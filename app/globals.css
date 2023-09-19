@@ -2,33 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Chicle';
-  src: url('/assets/fonts/Chicle/Chicle-Regular.ttf') format('truetype');
-}
- @font-face {
-  font-family: "Futura PT Book";
-  src:  url('/assets/fonts/FuturaPT//FuturaPTBook.otf') format('opentype');
-}
-@font-face {
-  font-family: "Futura PT Bold";
-  src:  url('/assets/fonts/FuturaPT/FuturaPTBold.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'Futura PT Light';
-  src:  url('/assets/fonts/FuturaPT/FuturaPTLight.otf') format('opentype');
-}
-
-@font-face {
-  font-family: "Futura PT Medium";
-  src:  url('/assets/fonts/FuturaPT/FuturaPTMedium.otf') format('opentype');
-}
-
-@font-face {
-  font-family: "Futura PT Demi";
-  src:  url('/assets/fonts/FuturaPT/FuturaPTDemi.otf') format('opentype');
-} 
 
 hr {
   margin: 1rem 0;

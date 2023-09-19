@@ -7,12 +7,12 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      chicle: ["Chicle", "cursive"],
-      FuturaPTMedium:['Futura PT Medium', "sans-serif"],
-      FuturaPTBook: ['Futura PT Book', "sans-serif"],
-      FuturaPTLight: ['Futura PT Light', "sans-serif"],
-      FuturaPTBold: ['Futura PT Bold', "sans-serif"],
-      FuturaPTDemi: ['Futura PT Demi', "sans-serif"],
+      chicle:  ['var(--font-chicle)'],
+      FuturaPTMedium: ['var(--font-futura-pt-book)'],
+      FuturaPTBook:  ['var(--font-futura-pt-bold)'],
+      FuturaPTLight:  ['var(--font-futura-pt-light)'],
+      FuturaPTBold:  ['var(--font-futura-pt-bold)'],
+      FuturaPTDemi:  ['var(--font-futura-pt-demi)'],
     },
     extend: {
       boxShadow: {
