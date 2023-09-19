@@ -21,6 +21,7 @@ export default function Pricing() {
           <div className="flex justify-center items-start   pt-2 lg:pt-8 pb-8">
             <Image
               src={ClothBasketImg}
+              placeholder="blur"
               priority
               alt={"flower"}
               width={600}

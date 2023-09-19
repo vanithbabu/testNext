@@ -313,6 +313,7 @@ export default function Profile() {
                       {card.status != "PRIMARY" && (
                         <Image
                           onClick={() => DeleteCard(card.id)}
+                          placeholder="blur"
                           className="cursor-pointer"
                           src={TrashImg}
                           alt="Delete Icon"
@@ -330,6 +331,7 @@ export default function Profile() {
                 onClick={() => handleModalOpen("Card")}
               >
                 <Image
+                 placeholder="blur"
                   src={AddNewCardImg}
                   alt="Add New Card"
                   width={20}

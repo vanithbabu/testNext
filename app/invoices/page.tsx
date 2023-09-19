@@ -92,7 +92,7 @@ const Invoice = () => {
                                 alt="Margo Logo"
                                 width="600"
                                 height={45}
-                               
+                                placeholder="blur"
                                 priority
                                
                             />
@@ -238,6 +238,7 @@ return(
                         width="600"
                         height={45}
                         priority
+                        placeholder="blur"
                        
                     />
                 </div>

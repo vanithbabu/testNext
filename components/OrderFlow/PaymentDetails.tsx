@@ -53,6 +53,7 @@ if(cards.length==0)
             width={24}
             height={24}
             priority
+            placeholder="blur"
           />
           <h2 className="font-chicle text-orange  text-3xl md:text-5xl">
             Payment

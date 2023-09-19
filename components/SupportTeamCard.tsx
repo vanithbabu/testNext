@@ -11,6 +11,7 @@ const SupportTeamCard = ({text,textStyle}:SupportTeamCardProps) => {
     width={200}
     height={50}
     priority
+    placeholder="blur"
   />
   <div className="mb-2">
   <h2 className=" text-blue text-4xl pb-2 font-chicle">I{"'"}m Mia</h2>

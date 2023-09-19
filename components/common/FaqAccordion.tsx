@@ -11,7 +11,8 @@ export default function FaqAccordion( { question, answer} : any) {
           alt="flower"
           width={45}
           height={45}
-          priority      
+          priority    
+          placeholder="blur"  
         />
         <div className="flex flex-col">
           <h2 className="font-chicle text-3xl md:text-4xl  font text-blue">

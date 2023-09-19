@@ -89,6 +89,7 @@ try {
           <div className="flex gap-8 lg:gap-16">
             <Image
               src={OrderImg}
+              placeholder="blur"
               alt="Margo Logo"
               width={75}
               height={75}

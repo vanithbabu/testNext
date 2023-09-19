@@ -17,6 +17,7 @@ const Header = () => {
             width="400"
             height={45}   
             priority
+            placeholder="blur"
           />
         </Link>
         <ul className="hidden  gap-8 xl:gap-12 text-blue text-xl xl:text-2xl font-FuturaPTBook font-semibold  lg:flex">

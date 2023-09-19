@@ -120,12 +120,16 @@ export default function ResetPassword() {
         <div className="w-full lg:w-40 flex justify-center lg:items-end lg:justify-end order-1 lg:order-2">
 
           <Image
+          
             src={MobileHeroImg}
             alt="Reset password"
-            width={500}
-            height={50}
+            sizes="100vw"
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
             priority
-            placeholder="blur"
+         
             className="lg:hidden  pt-4"
           />
           <Image

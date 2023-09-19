@@ -16,6 +16,7 @@ const OrderFlowHeader = () => {
           width="120"
           height={45}
           priority
+          placeholder="blur"
         />
       </div>
       <nav className="max-w-7xl mx-auto  flex  justify-between items-center py-8 gap-4 px-4 lg:px-8">
@@ -27,6 +28,7 @@ const OrderFlowHeader = () => {
             width="500"
             height={45}
             priority
+            placeholder="blur"
           />
         </Link>
         { pathname !== '/laundry/help' ? <Link href="/laundry/help" className="flex cursor-pointer z-30 text-sm hover:opacity-80 justify-center items-center md:text-md lg:text-lg bg-green text-white px-4 py-[4px] md:px-8 md:py-[8px] font-[600]  rounded-full font-FuturaPTBook">

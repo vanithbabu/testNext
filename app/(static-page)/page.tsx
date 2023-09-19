@@ -37,6 +37,11 @@ export default function Home() {
         <div className="flex justify-center lg:justify-center">
           <Image
             src={HeroBanner}
+            sizes="100vw"
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
             alt="See Our Pricing"
          
             priority
@@ -50,6 +55,7 @@ export default function Home() {
             <div className="flex justify-center mb-8 lg:mb-0 lg:mt-0  lg:justify-start">
               <Image
                 src={SeeOurPricingImg}
+                placeholder="blur"
                 alt="See Our Pricing"
                 width={400}
                 height={400}
@@ -107,6 +113,7 @@ export default function Home() {
               alt=" How It Works"
               width={250}
               height={361}
+              placeholder="blur"
             />
           </div>
         </div>

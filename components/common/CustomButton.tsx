@@ -34,8 +34,8 @@ const CustomButton = ({
    alt="Icon"
    width={25}
    height={30}
-   blurDataURL={rightIcon}
    priority
+   placeholder="blur"
 />
 }
     {!loading && title}

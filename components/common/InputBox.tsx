@@ -42,6 +42,7 @@ const InputBox = ({
         alt="eye close"
         width={20}
         height={20}
+        placeholder="blur"
         priority
         className={`absolute ${IconStyle}`}
         onClick={() => setIsPasswordVisible(true)}
@@ -51,6 +52,7 @@ const InputBox = ({
       alt="eye open"
       priority
       width={20}
+      placeholder="blur"
       height={20}
       className={`absolute ${IconStyle}`}
       onClick={() => setIsPasswordVisible(false)}

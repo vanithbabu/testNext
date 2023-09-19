@@ -21,7 +21,7 @@ export default function PriceAccordion( { title, content} : any) {
                 width={45}
                 height={45}
                 priority
-                
+                placeholder="blur"
               />
             <h2 className="font-chicle text-3xl md:text-4xl    font text-blue">
                { title} 

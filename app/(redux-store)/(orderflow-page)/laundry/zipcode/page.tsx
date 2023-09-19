@@ -177,6 +177,7 @@ export default function ZipCode() {
 
                 <div key={data} className="flex gap-4 justify-start items-start mb-4 lg:mb-6  ">
                   <Image
+                     placeholder="blur"
                     src={FlowerImg}
                     alt={"flower"}
                     width={40}

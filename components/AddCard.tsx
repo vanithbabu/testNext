@@ -144,6 +144,7 @@ const AddCard = ({ handleModalClose, handleModalSubmit }: AddCardProps) => {
                 height={30}
                 placeholder="blur"
                 priority
+                
               />
               <Image
                 className="my-2"
@@ -152,6 +153,7 @@ const AddCard = ({ handleModalClose, handleModalSubmit }: AddCardProps) => {
                 width={100}
                 height={40}
                 priority
+                placeholder="blur"
               />
             </div>
             <hr />
@@ -162,6 +164,7 @@ const AddCard = ({ handleModalClose, handleModalSubmit }: AddCardProps) => {
               height={48}
               layout="responsive"
               priority
+              placeholder="blur"
             />
           </div>
         </div>

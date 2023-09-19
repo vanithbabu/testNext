@@ -19,7 +19,6 @@ export default function HowItWorks() {
             <div key={item.title} className="flex flex-col items-center mb-6">
               <Image
                 src={item.icon}
-                blurDataURL={item.icon}
                 alt={item.title}
                 width={150}
                 height={150}

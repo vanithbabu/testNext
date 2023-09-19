@@ -64,6 +64,7 @@ export const FirstOrder = () => {
                             width={320}
                             height={40}
                             priority
+                            placeholder="blur"
                         />
                     </div>
                 </div>

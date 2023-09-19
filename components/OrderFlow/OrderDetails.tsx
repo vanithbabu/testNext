@@ -178,6 +178,7 @@ if(isUnitNumber && values.unit_number!='' )
             width={24}
             height={24}
             priority
+            placeholder="blur"
           />
           <h2 className="font-chicle text-orange  text-3xl md:text-5xl">
             Order Details

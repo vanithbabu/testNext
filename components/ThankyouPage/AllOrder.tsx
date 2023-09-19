@@ -60,7 +60,7 @@ export const AllOrder = () => {
                             width={320}
                             height={40}
                         
-                           
+                            placeholder="blur"
                         />
                     </div>
                 </div>

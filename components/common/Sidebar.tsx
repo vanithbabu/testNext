@@ -121,6 +121,7 @@ const SideBar = () => {
               width="180"
               height={92}
               priority
+              placeholder="blur"
             />
           </Link>
 
